@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PLAYER
   - BOSS
+  - BULLET
   layers:
   - Default
   - TransparentFX
