@@ -1,41 +1,25 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    //총알클래스 하는일
+    //플레이어가 발사 버튼을 누르면
+    //총알이 생성된 후 발사하고 싶은 방향(위)으로 움직인다
+
     public float speed = 10.0f;
-
-    GameObject player;
-    GameObject boss;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       player = GetComponent<GameObject>();
-       boss = GetComponent<GameObject>();
-    }
 
     // Update is called once per frame
     void Update()
     {
-        ////if (boss.transform.CompareTag("BOSS"))
-        ////    transform.Translate(-transform.up* speed * Time.deltaTime);
-        //if(player.transform.CompareTag("PLAYER")) transform.Translate(Vector3.up * speed * Time.deltaTime);
-        ////
-        //if (boss.transform.CompareTag("BOSS")) transform.Translate(Vector3.down * speed * Time.deltaTime);
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 
-    //IEnumerator BossBullet()
-    //{
-    //
-    //}
+    //카메라 화면밖으로 나가서 보이지 않게 되면
+    //호출되는 이벤트 함수
     //private void OnBecameInvisible()
     //{
     //    Destroy(gameObject);
     //}
-
-    
 }

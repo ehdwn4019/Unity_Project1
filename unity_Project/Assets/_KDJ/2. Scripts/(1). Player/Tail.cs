@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class Tail : MonoBehaviour
 {
-
-    public GameObject target;
-    public float speed = 3.0f;
+    //꼬랑지가 플레이어를 따라다닐려면
+    //플레이어의 위치를 알아야 한다
+    public GameObject target; //플레이어 오브젝트
+    public float speed = 3.0f; //꼬랑지 속도
 
     // Start is called before the first frame update
     void Start()
